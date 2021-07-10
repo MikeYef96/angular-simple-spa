@@ -1,0 +1,94 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+span,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--unnamed-font-family-rubik);
+}
+
+:root {
+  /* Colors: */
+  --unnamed-color-fdd000: #fdd000;
+  --unnamed-color-3d3d3d: #3d3d3d;
+
+  /* Font/text values */
+  --unnamed-font-family-rubik: "Rubik";
+  --unnamed-font-style-normal: normal;
+  --unnamed-font-weight-300: 300px;
+  --unnamed-font-weight-medium: medium;
+  --unnamed-font-weight-bold: bold;
+  --unnamed-font-size-12: 12px;
+  --unnamed-font-size-16: 16px;
+  --unnamed-font-size-20: 20px;
+  --unnamed-font-size-22: 22px;
+  --unnamed-font-size-50: 50px;
+  --unnamed-character-spacing-0: 0px;
+  --unnamed-character-spacing-1: 1px;
+  --unnamed-character-spacing-0-32: 0.32px;
+  --unnamed-character-spacing-0-4: 0.4px;
+  --unnamed-character-spacing-0-44: 0.44px;
+  --unnamed-line-spacing-30: 30px;
+  --unnamed-text-transform-uppercase: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 320px) {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 20px);
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .container {
+    width: calc(100% - 40px);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: calc(100% - 160px);
+    margin-left: 90px;
+    margin-right: 90px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: calc(100% - 200px);
+    margin-left: 110px;
+    margin-right: 110px;
+  }
+}

@@ -1,0 +1,23 @@
+@media screen and (min-width: 320px) {
+  .about-section {
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+  }
+
+  .about-article {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-title {
+    margin-bottom: 30px;
+    padding-top: 30px;
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .about-text {
+    margin-bottom: 40px;
+  }
+}

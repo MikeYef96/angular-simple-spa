@@ -1,0 +1,36 @@
+<header class="header">
+  <div class="container header-container">
+    <section class="logo-section">
+      <a href="http://localhost:4200/" class="logo-link">
+        <div class="we-container">
+          <p class="logo-title-we w">w</p>
+          <p class="logo-title-we e">e</p>
+        </div>
+
+        <div class="r-container"><p class="logo-title-r">R</p></div>
+
+        <div class="devs-container">
+          <span class="logo-title-devs">devs</span>
+        </div>
+      </a>
+    </section>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-list-item">
+          <a class="home-page" [routerLink]="['/']"
+            ><p class="home__title">HOME</p></a
+          >
+        </li>
+
+        <li class="nav-list-item">
+          <a
+            routerLinkActive="about-page"
+            routerLink="/about-us"
+            class="about-us-page"
+            ><p class="about-us__title">ABOUT US</p></a
+          >
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,137 @@
+@media screen and (min-width: 320px) {
+  .calendar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #272829;
+
+    .calendar-nav {
+      display: flex;
+      justify-content: space-between;
+      width: 240px;
+      padding-bottom: 10px;
+      border-bottom: solid 1px #dfdfdf;
+    }
+
+    .calendar-container {
+      display: flex;
+      justify-content: center;
+      width: 100vw;
+      margin-top: 20px;
+    }
+
+    .calendar-body {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0;
+      width: 226px;
+    }
+
+    .calendar-date {
+      align-items: center;
+      width: 22px;
+      height: 20px;
+      margin-right: 8px;
+      margin-bottom: 15px;
+      background: rgba($color: #000000, $alpha: 0);
+      color: #dfdfdf;
+
+      &:nth-child(7n) {
+        margin-right: 0 !important;
+      }
+
+      .date-item {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        color: #dfdfdf;
+        background: rgba($color: #000000, $alpha: 0);
+        border: none;
+
+        &:hover,
+        &:focus,
+        &:active {
+          color: #3d3d3d;
+          background: #fdd000;
+        }
+      }
+
+      .is-disabled {
+        cursor: default !important;
+        color: rgba(223, 223, 223, 0.2);
+
+        &:hover,
+        &:focus,
+        &:active {
+          color: rgba(223, 223, 223, 0.2);
+          background: none !important;
+        }
+      }
+    }
+
+    .calendar-footer {
+      display: flex;
+      justify-content: center;
+      width: 226px;
+
+      .saturday {
+        margin-right: 15px !important;
+      }
+    }
+
+    .month-title {
+      color: #dfdfdf;
+    }
+
+    .button {
+      height: 15px;
+      width: 10px;
+      padding: 0;
+      background: rgba($color: #000000, $alpha: 0);
+      border: none;
+      cursor: pointer;
+
+      &:hover,
+      &:active,
+      &:focus {
+        background: none;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .calendar {
+    padding: 100px 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    position: relative;
+  }
+
+  .calendar {
+    position: absolute;
+    min-width: 0;
+    top: 150px;
+    right: 0;
+    padding-top: 151px;
+    padding-bottom: 155px;
+
+    .calendar-container {
+      min-width: 320px;
+      width: 390px;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .calendar-container {
+    width: 410px;
+  }
+}

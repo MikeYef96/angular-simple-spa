@@ -1,0 +1,86 @@
+@media screen and (min-width: 320px) {
+  .hero {
+    content: "";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-width: 100%;
+    height: calc(100vh - 50px);
+    background-image: url(../../assets/hero-img.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      content: "";
+      background-image: url(../../assets/hero-img@2x.png);
+    }
+  }
+
+  .hero-title {
+    width: 230px;
+    margin-top: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fdd000;
+    letter-spacing: 0.6px;
+  }
+
+  .hero-text {
+    width: 230px;
+    margin-top: 20px;
+    text-align: end;
+    color: rgba(223, 223, 223, 0.6);
+    font-family: "Rubik";
+    font-size: 14px;
+    letter-spacing: 0.6px;
+  }
+
+  .date-container {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .hero-title {
+    font-family: "Rubik";
+    font-size: 22px;
+    font-weight: 900;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    min-width: 100%;
+    height: calc(100vh - 100px);
+  }
+
+  .hero-title {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (min-width: 1024) {
+  .main-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .hero {
+    min-width: calc(100% - 400px);
+  }
+  .hero-title {
+    font-family: "Rubik";
+    font-size: 50px !important;
+    font-weight: 900;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: calc(100vh - 150px);
+  }
+}
